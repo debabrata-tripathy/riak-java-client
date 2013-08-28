@@ -43,13 +43,11 @@ public class GetRespConverter implements RiakResponseConverter<List<RiakObject>>
 
     private final ByteArrayWrapper key;
     private final ByteArrayWrapper bucket;
-    private final boolean isHeadRequest;
 
-    public GetRespConverter(ByteArrayWrapper bucket, ByteArrayWrapper key, boolean isHeadRequest)
+    public GetRespConverter(ByteArrayWrapper bucket, ByteArrayWrapper key)
     {
         this.bucket = bucket;
         this.key = key;
-        this.isHeadRequest = isHeadRequest;
     }
 
     @Override
